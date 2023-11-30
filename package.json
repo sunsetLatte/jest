@@ -1,0 +1,38 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "jest --collectCoverage"
+  },
+
+  "collectCoverage": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  },
+
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "author": "omelnikova",
+  "license": "ISC",
+  "devDependencies": {
+    "coverage": "^0.4.1",
+    "jest": "^27.5.1"
+  }
+}
